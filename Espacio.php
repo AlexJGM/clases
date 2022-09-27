@@ -1,9 +1,14 @@
 <?php
-
 abstract class Espacio{
     private $puntuWifi=false;
     private $puntosRed=0;
     
+    
+    function __construct($_puntuWifi,$_puntosRed) {
+        $this->puntuWifi=$_puntuWifi;
+        $this->puntosRed=$_puntosRed;
+    }
+  
     /* @return number
     */
     public function getPuntosRed()
