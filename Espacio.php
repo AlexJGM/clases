@@ -1,21 +1,36 @@
 <?php
 
-class Espacio {
-    private $puntoWifi = false;
-    private $puntoRed = 0;
+abstract class Espacio{
+    private $puntuWifi=false;
+    private $puntosRed=0;
     
-    public function setEspacio($puntoWifi, $puntoRed) {
-        $this->puntoWifi = $puntoWifi;
-        $this->puntoRed = $puntoRed;
+    /* @return number
+    */
+    public function getPuntosRed()
+    {
+        return $this->puntosRed;
     }
     
-    public function getPuntoWifi() {
-        return $this->puntoWifi;
+    /* @param boolean $puntuWifi
+    */
+    public function setPuntuWifi($puntuWifi)
+    {
+        $this->puntuWifi = $puntuWifi;
     }
     
-    public function getPuntoRed() {
-        return $this->puntoRed;
+    /**
+     * @param number $puntosRed
+     */
+    public function setPuntosRed($puntosRed)
+    {
+        $this->puntosRed = $puntosRed;
+    }
+    
+    public function getPuntuWifi()
+    {
+        return $this->puntuWifi;
     }
     
 }
+
 ?>

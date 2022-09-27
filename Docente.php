@@ -1,5 +1,5 @@
 <?php
-class Docente {
+class Docente extends Persona{
     private $sueldo = 0;
     
     public function setDocente($sueldo) {
