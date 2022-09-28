@@ -50,21 +50,6 @@ class Alumno extends Persona{
     {
         $this->docente = $docente;
     }
-        
 }
-
-$alumno = new Alumno();
-
-$alumno->setName("Luis");
-$alumno->setDni("3234234D");
-$alumno->setEmail("a@gmail.com");
-$alumno->setCodMatricula("23123S");
-$alumno->setCiclo("Informatica");
-
-echo $alumno->getName();
-echo $alumno->getDni();
-echo $alumno->getEmail();
-echo $alumno->get_Cod();
-echo $alumno->get_ciclo();
 
 ?>
