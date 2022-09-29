@@ -61,12 +61,13 @@
         }
         
         
-        public function imprimir() {
-           echo var_dump($this->SO, $this->CodHZ);
         
+        public function imprimir(){
+            return "<h1>".$this->SO."</h1>"
+                ."<h2>".$this->CodHZ."</h2>"
+                    .($this->esSobremesa ?"<h3 style='color:green'>VERDADERO</h3>" :"<h3 style='color:red'>FALSO</h3>");
         }
         
-       
         
     }
 
